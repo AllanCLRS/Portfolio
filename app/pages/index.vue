@@ -2,7 +2,9 @@
 const { t, locale } = useI18n();
 
 const { data: page } = await useAsyncData(
-  "index",
+  // The key must carry the locale: a shared key makes the prerenderer reuse
+  // whichever locale rendered first for both routes, so /en served FR content.
+  `index-${locale.value}`,
   // Cast to the `fr` key, not `keyof Collections`: every locale shares one
   // schema, so this keeps the precise document type instead of a union of all
   // collections, which would not satisfy the components’ props.

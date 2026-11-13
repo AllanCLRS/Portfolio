@@ -3,7 +3,8 @@ const { t, locale } = useI18n();
 const { global } = useAppConfig();
 
 const { data: page } = await useAsyncData(
-  "about",
+  // Locale-scoped key: see the note in index.vue.
+  `about-${locale.value}`,
   // Cast to the `fr` key, not `keyof Collections`: every locale shares one
   // schema, so this keeps the precise document type instead of a union of all
   // collections, which would not satisfy the components’ props.

@@ -3,7 +3,8 @@ const { t, locale } = useI18n();
 const { global } = useAppConfig();
 
 const { data: page } = await useAsyncData(
-  "projects-page",
+  // Locale-scoped key: see the note in index.vue.
+  `projects-page-${locale.value}`,
   // No `.path()` filter: sourcing from a locale folder makes Content compute
   // the path as `/fr`, not `/projects`. The collection holds exactly one
   // document per locale, so `.first()` is unambiguous and path-independent.
@@ -24,7 +25,7 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData(
-  "projects",
+  `projects-${locale.value}`,
   () =>
     queryCollection(`projects_${locale.value}` as "projects_fr")
       .order("date", "DESC")
