@@ -10,15 +10,15 @@ export const useSocialLinks = () => {
 
   return computed<ButtonProps[]>(() => [
     {
-      // TODO Allan: remplace ces URL par tes vrais profils.
+      // TODO Allan: verifie cette URL LinkedIn, elle est encore une supposition.
       icon: "i-simple-icons-linkedin",
-      to: "https://www.linkedin.com/in/allan-clarissou",
+      to: "https://www.linkedin.com/in/allan-clarissou-ecam",
       target: "_blank",
       "aria-label": t("a11y.linkedin"),
     },
     {
       icon: "i-simple-icons-github",
-      to: "https://github.com/allanclarissou",
+      to: "https://github.com/AllanCLRS",
       target: "_blank",
       "aria-label": t("a11y.github"),
     },
