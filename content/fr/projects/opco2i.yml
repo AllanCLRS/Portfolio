@@ -1,0 +1,14 @@
+title: "Migration Strapi et refonte du parcours de réunion"
+client: "OPCO2i - via Steamulo"
+description: "Migration de Strapi 3 vers Strapi 4 et refonte du parcours de création de réunion."
+url: "https://www.opco2i.fr"
+icon: "i-simple-icons-strapi"
+color: "#4945FF"
+date: 2024-06-01
+duration: "3 mois"
+tags:
+  - "Strapi"
+  - "Node.js"
+highlights:
+  - "Migration Strapi 3 → 4"
+  - "Refonte du parcours de création de réunion"

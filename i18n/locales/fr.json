@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos"
+  },
+  "hero": {
+    "available": "Disponible pour de nouveaux projets",
+    "unavailable": "Indisponible pour le moment"
+  },
+  "projects": {
+    "view": "Voir le projet"
+  },
+  "a11y": {
+    "toLight": "Passer en thème clair",
+    "toDark": "Passer en thème sombre",
+    "switchLanguage": "Changer de langue",
+    "linkedin": "Allan Clarissou sur LinkedIn",
+    "github": "Allan Clarissou sur GitHub",
+    "email": "Envoyer un email à Allan Clarissou"
+  },
+  "error": {
+    "notFound": "Page introuvable",
+    "generic": "Une erreur est survenue.",
+    "backHome": "Retour à l'accueil"
+  }
+}

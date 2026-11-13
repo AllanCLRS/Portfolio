@@ -1,0 +1,11 @@
+title: "High-stakes projects, from frontend to backend."
+description: "Public services processing millions of filings, a website rebuild for a leading business school, bespoke internal tools. These are the engagements I have worked on, and what I concretely brought to each."
+links:
+  - label: "Get in touch"
+    icon: "i-lucide-mail"
+    color: "neutral"
+  - label: "See my background"
+    icon: "i-lucide-user"
+    to: "/about"
+    color: "neutral"
+    variant: "subtle"

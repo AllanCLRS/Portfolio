@@ -1,0 +1,21 @@
+title: "À propos de moi"
+description: "Ingénieur logiciel fullstack basé à Lyon. Diplômé de l'ECAM Lyon A&M, quatre ans à construire et faire évoluer des applications web à fort enjeu - et à en piloter le budget."
+content: |
+  Je suis **Allan Clarissou**, ingénieur logiciel fullstack basé à **Lyon**. Après des classes préparatoires PTSI aux Lazaristes et un master d'ingénieur généraliste à l'**ECAM Lyon A&M**, ponctué d'un semestre numérique en République tchèque, je me suis spécialisé dans le développement web.
+
+  ### Ce que je fais
+
+  Je travaille sur toute la chaîne : **React, Next.js, Nuxt et Vue.js** côté front, **Node.js, NestJS et PHP Symfony** côté back, avec PostgreSQL et Redis en support. Ces quatre dernières années m'ont mené sur des projets où l'erreur coûte cher - un service public numérique traitant plusieurs millions de formalités d'entreprises par an, et la refonte complète du site d'une grande école de management.
+
+  ### Au-delà du code
+
+  Sur la maintenance évolutive du site de Grenoble École de Management, j'ai porté un **budget annuel de 50 k€** : chiffrage, devis, relation client, coordination des développements et de l'hébergement. Ce rôle m'a appris quelque chose que le code seul n'enseigne pas - arbitrer entre la dette technique, le besoin métier et ce que le client peut réellement financer.
+
+  J'attache une importance particulière à la **performance mesurable**. Sur la plateforme de Maline Immobilier, le chargement de la carte des DPE a été divisé par deux et l'affichage de la liste des biens par quatre pour les plus gros clients. Ce sont ces chiffres-là qui comptent, pas le framework du moment.
+
+  ### En dehors du clavier
+
+  J'ai été **trésorier du club de robotique de l'ECAM** et j'ai participé à la Coupe de France de robotique. Je fais du bénévolat événementiel dans un village et en centre de loisirs. Le reste du temps : escalade, volley, VTT, tennis - et beaucoup de bricolage, entre mécanique, électronique et robotique.
+
+  Envie d'en discuter ? Jetez un œil à [mes projets](/projects) ou [écrivez-moi](mailto:allan.clrs@gmail.com).
+images: []

@@ -1,0 +1,21 @@
+title: "Real-estate platform and internal tools"
+client: "Maline Immobilier"
+description: "Fullstack development and project management on a real-estate platform: performance optimisation, bespoke internal tools, migration to TypeScript and a complete UX/UI rebuild with Nuxt UI."
+url: "https://maline.io/fr/"
+icon: "i-lucide-building-2"
+color: "#7381F3"
+date: 2025-01-01
+tags:
+  - "Nuxt"
+  - "Vue.js"
+  - "TypeScript"
+  - "PHP Symfony"
+  - "OVHcloud S3"
+highlights:
+  - "Energy-rating map load time cut in half"
+  - "Property list rendering four times faster for the largest clients"
+  - "Automated SMS manager to convert leads into appointments"
+  - "S3 media library (OVHcloud): personal and shared media, thumbnails, downloads"
+  - "Property-value and energy-rating maps, plus a geographic zone assignment map (postcodes, IRIS districts, custom zones)"
+  - "Migration from JavaScript to TypeScript and a responsive rebuild with Nuxt UI"
+  - "AI tooling integrated into the development workflow to harden code quality"

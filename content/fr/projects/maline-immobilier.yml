@@ -1,0 +1,21 @@
+title: "Plateforme immobilière et outils métier"
+client: "Maline Immobilier"
+description: "Développement fullstack et gestion de projet sur une plateforme immobilière : optimisation des performances, création d'outils métier sur mesure, migration vers TypeScript et refonte complète de l'UX/UI sous Nuxt UI."
+url: "https://maline.io/fr/"
+icon: "i-lucide-building-2"
+color: "#7381F3"
+date: 2025-01-01
+tags:
+  - "Nuxt"
+  - "Vue.js"
+  - "TypeScript"
+  - "PHP Symfony"
+  - "OVHcloud S3"
+highlights:
+  - "Chargement de la carte des DPE divisé par 2"
+  - "Affichage de la liste des biens divisé par 4 pour les plus gros clients"
+  - "Gestionnaire d'envoi de SMS automatisé pour convertir les leads en rendez-vous"
+  - "Médiathèque S3 (OVHcloud) : médias personnels et partagés, vignettes, téléchargement"
+  - "Cartes DVF/DPE et carte d'assignation de zones géographiques (codes postaux, IRIS, zones personnalisables)"
+  - "Migration de JavaScript vers TypeScript et refonte responsive sous Nuxt UI"
+  - "Intégration d'outils d'IA dans le workflow de développement pour fiabiliser la qualité du code"

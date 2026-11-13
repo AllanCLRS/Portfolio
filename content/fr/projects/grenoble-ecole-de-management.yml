@@ -1,0 +1,19 @@
+title: "Refonte complète du site vitrine"
+client: "Grenoble École de Management - via Steamulo"
+description: "Développement fullstack de la refonte complète du site vitrine, puis pilotage de la maintenance évolutive : chiffrage, devis, relation client et coordination des développements comme de l'hébergement, sur un budget annuel de 50 k€."
+url: "https://www.grenoble-em.com"
+icon: "i-lucide-school"
+color: "#DC2626"
+date: 2023-06-01
+duration: "2 ans et demi"
+tags:
+  - "Next.js"
+  - "NestJS"
+  - "Strapi"
+  - "Azure B2C"
+  - "Redis"
+  - "Matomo"
+highlights:
+  - "Refonte fullstack complète du site vitrine"
+  - "Budget annuel de maintenance évolutive de 50 k€"
+  - "Chiffrage, devis et relation client en direct"

@@ -1,0 +1,17 @@
+title: "Guichet Unique des formalités d'entreprises"
+client: "INPI - via Steamulo"
+description: "Maintenance et évolutions d'un service public numérique traitant plusieurs millions de formalités d'entreprises par an. Travail au sein d'une équipe de 35 personnes dont 25 développeurs, avec un processus rigoureux : revues de code, recette et mises en production très encadrées."
+url: "https://formalites.entreprises.gouv.fr"
+icon: "i-lucide-landmark"
+color: "#1D4ED8"
+date: 2023-01-01
+duration: "2 ans"
+tags:
+  - "React"
+  - "PHP"
+  - "Symfony"
+  - "API Platform"
+highlights:
+  - "Plusieurs millions de formalités traitées par an"
+  - "Équipe de 35 personnes, dont 25 développeurs"
+  - "Revues de code, recette et mises en production encadrées"

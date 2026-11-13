@@ -1,0 +1,11 @@
+title: "Des projets à fort enjeu, du front au back."
+description: "Services publics traitant des millions de formalités, refonte de site vitrine pour une grande école, outils métier sur mesure. Voici les missions sur lesquelles j'ai travaillé, et ce que j'y ai concrètement apporté."
+links:
+  - label: "Me contacter"
+    icon: "i-lucide-mail"
+    color: "neutral"
+  - label: "Voir mon parcours"
+    icon: "i-lucide-user"
+    to: "/about"
+    color: "neutral"
+    variant: "subtle"

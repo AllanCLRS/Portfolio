@@ -1,0 +1,21 @@
+title: "About me"
+description: "Fullstack software engineer based in Lyon, France. ECAM Lyon A&M graduate, four years building and scaling high-stakes web applications - and managing their budgets."
+content: |
+  I am **Allan Clarissou**, a fullstack software engineer based in **Lyon, France**. After PTSI intensive preparatory classes at Aux Lazaristes and a Master of Engineering at **ECAM Lyon A&M**, including an exchange semester in computer science in the Czech Republic, I specialised in web development.
+
+  ### What I do
+
+  I work across the whole stack: **React, Next.js, Nuxt and Vue.js** on the frontend, **Node.js, NestJS and PHP Symfony** on the backend, with PostgreSQL and Redis underneath. These past four years have taken me through projects where mistakes are expensive - a public digital service processing several million company filings a year, and the complete rebuild of a leading business school's website.
+
+  ### Beyond the code
+
+  On the evolutive maintenance of the Grenoble École de Management website, I owned a **50k euro annual budget**: estimating, quoting, client relations, and coordinating both development and hosting. That role taught me something code alone does not - how to arbitrate between technical debt, business needs and what the client can actually fund.
+
+  I care about **measurable performance**. On the Maline Immobilier platform, the energy-rating map load time was cut in half and the property list rendered four times faster for the largest clients. Those are the numbers that matter, not whichever framework is currently fashionable.
+
+  ### Away from the keyboard
+
+  I served as **treasurer of the ECAM robotics club** and competed in the French Robotics Cup. I volunteer at village events and at a youth centre. The rest of the time: climbing, volleyball, mountain biking, tennis - and plenty of tinkering across mechanics, electronics and robotics.
+
+  Want to talk? Take a look at [my projects](/projects) or [send me an email](mailto:allan.clrs@gmail.com).
+images: []

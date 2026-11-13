@@ -1,0 +1,14 @@
+title: "Strapi migration and meeting flow rebuild"
+client: "OPCO2i - via Steamulo"
+description: "Migration from Strapi 3 to Strapi 4, and a rebuild of the meeting creation flow."
+url: "https://www.opco2i.fr"
+icon: "i-simple-icons-strapi"
+color: "#4945FF"
+date: 2024-06-01
+duration: "3 months"
+tags:
+  - "Strapi"
+  - "Node.js"
+highlights:
+  - "Strapi 3 to 4 migration"
+  - "Meeting creation flow rebuilt"

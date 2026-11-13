@@ -1,0 +1,15 @@
+title: "Assembly flow simulator for conveyor networks"
+client: "Bosch Rexroth"
+description: "Engineering internship: web development of an assembly flow simulator for conveyor networks, Excel-driven CAD design, and client documentation."
+url: "https://www.boschrexroth.com"
+icon: "i-simple-icons-bosch"
+color: "#E20015"
+date: 2021-04-01
+tags:
+  - "JavaScript"
+  - "Solidworks"
+  - "Excel"
+highlights:
+  - "Web simulator for assembly flows across conveyor networks"
+  - "Excel-driven CAD design in Solidworks"
+  - "Wrote a tutorial for a client demonstration rig"

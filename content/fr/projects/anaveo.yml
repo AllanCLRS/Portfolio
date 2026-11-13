@@ -1,0 +1,14 @@
+title: "Tests de charge d'une application de streaming cloud"
+client: "Anaveo - via Steamulo"
+description: "Tests de charge et de performances sur une application cloud de streaming."
+url: "https://www.anaveo.fr"
+icon: "i-lucide-gauge"
+color: "#059669"
+date: 2024-10-01
+duration: "2 mois"
+tags:
+  - "Tests de charge"
+  - "Performances"
+  - "Cloud"
+highlights:
+  - "Campagnes de tests de charge et de performances"

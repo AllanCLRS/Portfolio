@@ -1,0 +1,41 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Deployment
+.vercel
+
+# Node dependencies
+node_modules
+
+# Build artefacts
+.vite-temp
+*.tsbuildinfo
+coverage
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+Thumbs.db
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Per-developer Claude Code permissions (contains local absolute paths).
+# A shared .claude/settings.json, if you ever add one, stays tracked.
+.claude/settings.local.json
+
+# Pre-migration safety copies. Git replaces them: delete once the first
+# commit is in and you no longer need them.
+.backup-pre-viteplus

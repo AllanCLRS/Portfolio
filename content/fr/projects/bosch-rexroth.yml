@@ -1,0 +1,15 @@
+title: "Simulateur de flux d'assemblage sur convoyeurs"
+client: "Bosch Rexroth"
+description: "Stage d'application en ingénierie : développement web d'un simulateur de flux d'assemblage sur réseaux de convoyeurs, conception CAO pilotée par Excel et rédaction de documentation client."
+url: "https://www.boschrexroth.com"
+icon: "i-simple-icons-bosch"
+color: "#E20015"
+date: 2021-04-01
+tags:
+  - "JavaScript"
+  - "Solidworks"
+  - "Excel"
+highlights:
+  - "Simulateur web de flux d'assemblage sur réseaux de convoyeurs"
+  - "CAO sur Solidworks pilotée par Excel"
+  - "Rédaction d'un tutoriel pour un banc de démonstration client"

@@ -1,0 +1,12 @@
+{
+  "eslint.enable": false,
+  "prettier.enable": false,
+  "oxc.enable": true,
+  "oxc.fmt.experimental": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit"
+  },
+  "vue.server.hybridMode": true
+}

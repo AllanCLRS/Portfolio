@@ -1,0 +1,19 @@
+title: "Complete website rebuild"
+client: "Grenoble École de Management - via Steamulo"
+description: "Fullstack development of the complete website rebuild, then ownership of its evolutive maintenance: estimating, quoting, client relations, and coordinating both development and hosting on a 50k euro annual budget."
+url: "https://www.grenoble-em.com"
+icon: "i-lucide-school"
+color: "#DC2626"
+date: 2023-06-01
+duration: "2.5 years"
+tags:
+  - "Next.js"
+  - "NestJS"
+  - "Strapi"
+  - "Azure B2C"
+  - "Redis"
+  - "Matomo"
+highlights:
+  - "Complete fullstack rebuild of the public website"
+  - "50k euro annual evolutive maintenance budget"
+  - "Estimating, quoting and direct client relations"

@@ -1,0 +1,17 @@
+title: "One-Stop Shop for company filings"
+client: "INPI - via Steamulo"
+description: "Maintenance and feature work on a public digital service processing several million company filings a year. Worked within a 35-person team including 25 developers, under a rigorous process: code reviews, QA acceptance and tightly controlled production releases."
+url: "https://formalites.entreprises.gouv.fr"
+icon: "i-lucide-landmark"
+color: "#1D4ED8"
+date: 2023-01-01
+duration: "2 years"
+tags:
+  - "React"
+  - "PHP"
+  - "Symfony"
+  - "API Platform"
+highlights:
+  - "Several million company filings processed per year"
+  - "35-person team, including 25 developers"
+  - "Code reviews, QA acceptance and controlled production releases"

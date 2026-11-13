@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "unavailable": "Not available at the moment"
+  },
+  "projects": {
+    "view": "View project"
+  },
+  "a11y": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme",
+    "switchLanguage": "Change language",
+    "linkedin": "Allan Clarissou on LinkedIn",
+    "github": "Allan Clarissou on GitHub",
+    "email": "Email Allan Clarissou"
+  },
+  "error": {
+    "notFound": "Page not found",
+    "generic": "Something went wrong.",
+    "backHome": "Back to home"
+  }
+}

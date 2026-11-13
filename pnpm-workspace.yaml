@@ -1,0 +1,25 @@
+# Vite+ requires `vite` to resolve to its own core build, and `vitest` to be
+# pinned to the version bundled with the installed `vite-plus`.
+# Keep these in sync with the `vite-plus` version in package.json.
+overrides:
+  vite@*: npm:@voidzero-dev/vite-plus-core@1.6.0
+  vitest@*: 5.1.0
+
+# pnpm >= 10 blocks dependency build scripts unless listed here.
+# These all need a postinstall to fetch/link their native binary.
+allowBuilds:
+  "@parcel/watcher": true
+  esbuild: true
+  vue-demi: true
+
+# @nuxtjs/mdc (via @nuxt/content) registers these as Vite optimizeDeps entries,
+# which Vite resolves from the project root rather than from the module. pnpm's
+# strict layout keeps them nested, so they have to be hoisted to be found.
+publicHoistPattern:
+  - "remark-*"
+  - "rehype-*"
+  - "unist-util-*"
+  - "unified"
+  - "parse5"
+  - "debug"
+  - "extend"
