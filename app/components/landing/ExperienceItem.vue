@@ -16,7 +16,7 @@ defineProps<ExperienceItemProps>();
   <Motion
     v-bind="RISE_IN"
     :transition="{ delay: 0.1 * index }"
-    class="text-muted flex items-center gap-4"
+    class="text-muted flex items-center gap-4 justify-between"
   >
     <p class="text-sm text-start shrink-0 tabular-nums">
       {{ experience.date }}

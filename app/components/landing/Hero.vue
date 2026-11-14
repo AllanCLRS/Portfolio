@@ -47,7 +47,7 @@ defineProps<HeroProps>();
 
     <template #links>
       <Motion v-bind="FADE_IN" :transition="{ duration: 0.6, delay: 0.5 }">
-        <div v-if="page.hero.links" class="flex items-center flex-wrap gap-2">
+        <div v-if="page.hero.links" class="flex flex-col items-center sm:flex-row gap-2">
           <UButton v-bind="page.hero.links[0]" :to="`mailto:${global.email}`" />
           <UButton
             :color="global.available ? 'success' : 'error'"
