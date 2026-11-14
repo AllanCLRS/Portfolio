@@ -3,7 +3,7 @@
 // hreflang and canonical links must be absolute to be usable by search
 // engines; without a baseUrl, @nuxtjs/i18n emits relative paths and warns.
 // Overridable per environment so a custom domain needs no code change.
-const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL ?? "https://portfolio-sepia-six-99.vercel.app";
+const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL ?? "https://allan-clarissou-portfolio.vercel.app";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
