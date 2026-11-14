@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { mountSuspended } from "@nuxt/test-utils/runtime";
 
+import type { IndexPage } from "~/types/content";
+
 import LandingEducation from "~/components/landing/Education.vue";
 import LandingEngagements from "~/components/landing/Engagements.vue";
 import LandingExpertise from "~/components/landing/Expertise.vue";
@@ -10,7 +12,7 @@ import LandingWorkExperience from "~/components/landing/WorkExperience.vue";
 // A fixture rather than the real content: these assert rendering behaviour,
 // so they must not break every time Allan edits his CV. content.test.ts
 // guards the real data separately.
-const page = {
+const fixture = {
   experience: {
     title: "Expériences",
     description: "",
@@ -63,8 +65,13 @@ const page = {
       { title: "Club de robotique", description: "Trésorier à l'ECAM.", icon: "i-lucide-bot" },
     ],
   },
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-} as any;
+} satisfies Pick<IndexPage, "experience" | "education" | "expertise" | "languages" | "engagements">;
+
+// The components take a whole IndexPage, but each only reads its own section.
+// The `satisfies` above type-checks every field the fixture does provide, so a
+// typo or a renamed content field fails here; the cast only covers the Content
+// base fields (id, path, body…) that no component under test touches.
+const page = fixture as unknown as IndexPage;
 
 describe("LandingWorkExperience", () => {
   it("renders each position with its company", async () => {

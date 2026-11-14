@@ -1,6 +1,53 @@
 import type { IndexPage } from "~/types/content";
 
 /**
+ * The subset of schema.org we emit. Typing these rather than building loose
+ * object literals means a renamed content field or a misspelled schema key
+ * fails the typecheck instead of silently shipping invalid structured data,
+ * which search engines reject without telling anyone.
+ */
+interface SchemaOrganization {
+  "@type": "Organization" | "EducationalOrganization";
+  name: string;
+  url?: string;
+}
+
+interface SchemaPerson {
+  "@type": "Person";
+  "@id": string;
+  name: string;
+  url: string;
+  image: string;
+  email: string;
+  jobTitle: string;
+  description: string;
+  sameAs: string[];
+  address: {
+    "@type": "PostalAddress";
+    addressLocality: string;
+    addressCountry: string;
+  };
+  worksFor?: SchemaOrganization;
+  alumniOf: SchemaOrganization[];
+  knowsAbout: string[];
+  knowsLanguage: { "@type": "Language"; name: string }[];
+}
+
+interface SchemaWebSite {
+  "@type": "WebSite";
+  "@id": string;
+  url: string;
+  name: string;
+  inLanguage: string;
+  publisher: { "@id": string };
+}
+
+interface SchemaGraph {
+  "@context": "https://schema.org";
+  "@graph": [SchemaPerson, SchemaWebSite];
+}
+
+/**
  * JSON-LD for the home page: a Person describing Allan, plus the WebSite it
  * belongs to.
  *
@@ -19,7 +66,7 @@ export const useStructuredData = (page: Ref<IndexPage | null | undefined>) => {
 
   const localeHome = computed(() => (locale.value === "fr" ? site : `${site}/en`));
 
-  const graph = computed(() => {
+  const graph = computed<SchemaGraph | null>(() => {
     const data = page.value;
     if (!data) return null;
 
@@ -28,7 +75,7 @@ export const useStructuredData = (page: Ref<IndexPage | null | undefined>) => {
       .map((link) => String(link.to ?? ""))
       .filter((url) => url.startsWith("http"));
 
-    const person = {
+    const person: SchemaPerson = {
       "@type": "Person",
       "@id": `${site}/#allan`,
       name: "Allan Clarissou",
@@ -65,7 +112,7 @@ export const useStructuredData = (page: Ref<IndexPage | null | undefined>) => {
       })),
     };
 
-    const website = {
+    const website: SchemaWebSite = {
       "@type": "WebSite",
       "@id": `${site}/#website`,
       url: site,
