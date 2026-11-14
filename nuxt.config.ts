@@ -1,4 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+// hreflang and canonical links must be absolute to be usable by search
+// engines; without a baseUrl, @nuxtjs/i18n emits relative paths and warns.
+// Overridable per environment so a custom domain needs no code change.
+const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL ?? "https://portfolio-sepia-six-99.vercel.app";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -9,6 +15,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
+    baseUrl: SITE_URL,
     // French is the default and stays unprefixed (/), English lives under /en.
     defaultLocale: "fr",
     strategy: "prefix_except_default",
