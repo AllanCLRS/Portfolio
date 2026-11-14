@@ -16,9 +16,20 @@ useHead(() => ({
   ],
 }));
 
+const siteUrl = useRuntimeConfig().public.siteUrl;
+
+// Defaults for the whole site. Pages override title/description; Twitter falls
+// back to the og:* values, so only the image is worth declaring twice.
 useSeoMeta({
   titleTemplate: "%s - Allan Clarissou",
+  ogSiteName: "Allan Clarissou",
+  ogType: "website",
+  ogImage: `${siteUrl}/og-image.jpg`,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: "Allan Clarissou — Ingénieur logiciel fullstack",
   twitterCard: "summary_large_image",
+  twitterImage: `${siteUrl}/og-image.jpg`,
 });
 </script>
 

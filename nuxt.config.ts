@@ -31,6 +31,11 @@ export default defineNuxtConfig({
       redirectOn: "root",
     },
   },
+  runtimeConfig: {
+    public: {
+      siteUrl: SITE_URL,
+    },
+  },
   typescript: {
     typeCheck: true,
   },

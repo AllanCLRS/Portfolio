@@ -10,7 +10,6 @@ export const useSocialLinks = () => {
 
   return computed<ButtonProps[]>(() => [
     {
-      // TODO Allan: verifie cette URL LinkedIn, elle est encore une supposition.
       icon: "i-simple-icons-linkedin",
       to: "https://www.linkedin.com/in/allan-clarissou-ecam",
       target: "_blank",
