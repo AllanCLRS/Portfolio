@@ -37,7 +37,11 @@ export default defineNuxtConfig({
     },
   },
   typescript: {
-    typeCheck: true,
+    // Dev only. Running vue-tsc inside the production build doubles its peak
+    // memory, and a 2-core/8 GB build machine kills the process without a
+    // readable error. Types are already gated by the pre-commit hook and by
+    // `pnpm typecheck`, so the build gains nothing by checking them again.
+    typeCheck: process.env.NODE_ENV !== "production",
   },
   css: ["~/assets/css/main.css"],
   // The whole site is content-driven and has no dynamic routes, so every page
