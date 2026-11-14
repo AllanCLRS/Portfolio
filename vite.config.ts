@@ -20,6 +20,10 @@ export default defineConfig({
   lint: {
     ignorePatterns: generated,
   },
+  // Run on staged files by the pre-commit hook (see .vite-hooks/pre-commit).
+  staged: {
+    "*": "vp check --fix",
+  },
   fmt: {
     ignorePatterns: [...generated, "pnpm-lock.yaml"],
   },

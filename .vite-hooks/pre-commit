@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+# Format and lint only what is staged — fast, and it can fix in place.
+vp staged
+
+# Then the two checks that need the whole project. `vp check` does not cover
+# Vue templates; only vue-tsc, via `nuxt typecheck`, catches a prop or a
+# content field that no longer type-checks against its component.
+pnpm typecheck
+pnpm test
