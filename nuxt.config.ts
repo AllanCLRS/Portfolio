@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   // can be rendered at build time and served as static HTML.
   nitro: {
     prerender: {
-      routes: ["/", "/en"],
+      routes: ["/", "/en", "/sitemap.xml", "/robots.txt"],
       crawlLinks: true,
     },
   },
