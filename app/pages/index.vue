@@ -27,6 +27,10 @@ useSeoMeta({
   description: () => page.value?.seo?.description || page.value?.description,
   ogDescription: () => page.value?.seo?.description || page.value?.description,
 });
+
+// Only on the home page: it is where the data describing Allan actually lives,
+// and where search engines expect the site's Person entity to be declared.
+useStructuredData(page);
 </script>
 
 <template>
