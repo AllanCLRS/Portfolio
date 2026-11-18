@@ -8,7 +8,7 @@ const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL ?? "https://allan-clarissou-po
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/ui", "@nuxt/content", "@nuxtjs/i18n", "motion-v/nuxt"],
+  modules: ["@nuxt/ui", "@nuxt/content", "@nuxtjs/i18n", "motion-v/nuxt", "@vercel/analytics/nuxt"],
   content: {
     experimental: {
       sqliteConnector: "native",
