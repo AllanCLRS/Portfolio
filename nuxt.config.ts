@@ -23,13 +23,12 @@ export default defineNuxtConfig({
       { code: "fr", name: "Français", language: "fr-FR", file: "fr.json" },
       { code: "en", name: "English", language: "en-US", file: "en.json" },
     ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "i18n_locale",
-      // Without this, a first-time visitor is redirected away from whichever
-      // URL they were sent, which breaks shared links.
-      redirectOn: "root",
-    },
+    // No language-based redirect. The site is prerendered, so the redirect
+    // could only run client-side after load: crawlers and Lighthouse (en-US)
+    // landed on / and ended up on /en, whose URL no longer matched the
+    // canonical (an hreflang alternate), and the French root risked never
+    // being indexed. hreflang tags plus the language switcher cover discovery.
+    detectBrowserLanguage: false,
   },
   runtimeConfig: {
     public: {
@@ -48,7 +47,7 @@ export default defineNuxtConfig({
   // can be rendered at build time and served as static HTML.
   nitro: {
     prerender: {
-      routes: ["/", "/en", "/sitemap.xml", "/robots.txt"],
+      routes: ["/", "/en", "/sitemap.xml", "/robots.txt", "/llms.txt"],
       crawlLinks: true,
     },
   },
