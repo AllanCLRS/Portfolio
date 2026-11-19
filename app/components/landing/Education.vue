@@ -30,7 +30,7 @@ const timelineItems = computed(() =>
   >
     <!-- No `default-value`: it marks entries as completed, which forces
          `bg-primary` on the indicator and would bury the per-item colour. -->
-    <UTimeline :items="timelineItems" class="mt-6">
+    <UTimeline :items="timelineItems" class="mt-6" :ui="{ date: 'text-muted' }">
       <template #indicator="{ item }">
         <UIcon :name="item.icon" class="size-4" :style="{ color: item.color }" />
       </template>

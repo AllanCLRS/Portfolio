@@ -53,6 +53,7 @@ defineProps<HeroProps>();
             :color="global.available ? 'success' : 'error'"
             variant="ghost"
             class="gap-2"
+            :class="global.available ? 'text-green-800 dark:text-green-400' : undefined"
             :label="global.available ? t('hero.available') : t('hero.unavailable')"
             :to="global.available ? `mailto:${global.email}` : undefined"
           >
